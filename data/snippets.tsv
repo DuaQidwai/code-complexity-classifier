@@ -1,0 +1,142 @@
+code	label
+print("Hello World")	Simple
+x = 5 + 3	Simple
+for i in range(5): print(i)	Simple
+nums = [1, 2, 3]	Simple
+total = sum(nums)	Simple
+name = "Alice"	Simple
+flag = True	Simple
+a = 10	Simple
+b = a * 2	Simple
+if a > 5: print(a)	Simple
+print(len("hello"))	Simple
+x = 0
+while x < 3: x += 1	Simple
+for c in "code": print(c)	Simple
+print(max([1, 4, 2]))	Simple
+result = 4 / 2	Simple
+items = []	Simple
+items.append(1)	Simple
+print(type(5))	Simple
+value = None	Simple
+print("Done")	Simple
+def add(a, b):
+    return a + b	Reasonable
+def average(nums):
+    return sum(nums) / len(nums)	Reasonable
+class Counter:
+    def __init__(self):
+        self.value = 0	Reasonable
+def is_even(n):
+    return n % 2 == 0	Reasonable
+def greet(name):
+    print(f"Hello {name}")	Reasonable
+class Person:
+    def __init__(self, name):
+        self.name = name	Reasonable
+def square(n):
+    return n * n	Reasonable
+class Timer:
+    def start(self):
+        pass	Reasonable
+def max_value(nums):
+    return max(nums)	Reasonable
+class Stack:
+    def push(self, x):
+        pass	Reasonable
+def print_items(items):
+    for item in items:
+        print(item)	Reasonable
+class Logger:
+    def log(self, msg):
+        print(msg)	Reasonable
+def multiply(a, b):
+    return a * b	Reasonable
+class Config:
+    def load(self):
+        pass	Reasonable
+def count(items):
+    return len(items)	Reasonable
+class FileReader:
+    def read(self):
+        pass	Reasonable
+def subtract(a, b):
+    return a - b	Reasonable
+class Service:
+    def run(self):
+        pass	Reasonable
+def say_hi():
+    print("hi")	Reasonable
+class Calculator:
+    def add(self, a, b):
+        return a + b	Reasonable
+class SumStrategy:
+    def execute(self, nums):
+        total = 0
+        for n in nums:
+            total += n
+        return total	Overengineered
+class PrinterFactory:
+    def get_printer(self):
+        return ConsolePrinter()	Overengineered
+class Manager:
+    def __init__(self):
+        self.worker = Worker()	Overengineered
+class DataProcessor:
+    def process(self, data):
+        return data	Overengineered
+class AbstractService:
+    def run(self):
+        raise NotImplementedError()	Overengineered
+class Controller:
+    def handle(self):
+        self.service.run()	Overengineered
+class Wrapper:
+    def wrap(self, x):
+        return x	Overengineered
+class Singleton:
+    _instance = None
+    def get_instance(self):
+        if not self._instance:
+            self._instance = Singleton()
+        return self._instance	Overengineered
+class Application:
+    def start(self):
+        self.init()
+    def init(self):
+        pass	Overengineered
+class Pipeline:
+    def step_one(self):
+        pass
+    def step_two(self):
+        pass	Overengineered
+class Factory:
+    def create(self):
+        return Product()	Overengineered
+class Adapter:
+    def adapt(self):
+        pass	Overengineered
+class StrategyContext:
+    def __init__(self, strategy):
+        self.strategy = strategy	Overengineered
+class Orchestrator:
+    def orchestrate(self):
+        self.execute()	Overengineered
+class Builder:
+    def build(self):
+        pass	Overengineered
+class Proxy:
+    def call(self):
+        pass	Overengineered
+class Facade:
+    def operation(self):
+        pass	Overengineered
+class Mediator:
+    def notify(self):
+        pass	Overengineered
+class Coordinator:
+    def coordinate(self):
+        pass	Overengineered
+class ServiceLocator:
+    def get(self):
+        pass	Overengineered
